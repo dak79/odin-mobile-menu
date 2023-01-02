@@ -1,0 +1,60 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* TilwindCSS Color palette: Slate*/
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+  --font: Arial, Helvetica, sans-serif;
+  --font-big: 1.5rem;
+}
+
+body {
+  font-family: var(--font);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--slate-800);
+  color: var(--slate-50);
+}
+
+.title {
+  font-size: var(--font-big);
+  margin: 0.5em;
+}
+
+.navbar-links ul {
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li:hover {
+  background-color: var(--slate-700);
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  color: var(--slate-50);
+}
