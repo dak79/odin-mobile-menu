@@ -1,3 +1,3 @@
-import { toggleLinks } from "./js/menu";
+import { toggleLinks } from "./js/menu.js";
 
 toggleLinks();
